@@ -11,19 +11,16 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            //Console.WriteLine("How many students are in your class? ");
-            //var classCount = int.Parse(Console.ReadLine());
-
-            //var studentName = new string[classCount];
-            //var studentGrades = new int[classCount];
-
-
+            //Create a new list.
             var studentName = new List<Student>();
-
+            //initialize adding variable. 
             var adding  = true;
 
-            while (adding)
+            while (adding)//Will continue until adding is False.
             {
+                //Create a new Student class that is made in the bottom.
+                //Prompted the user to input name, grade, favorite number, birthday, and phone number
+                //The inputs are pointed towards the class fields
                 Student students = new Student();
                 Console.WriteLine("What is the student's name?");
                 students.Name = Console.ReadLine();
@@ -43,8 +40,8 @@ namespace ConsoleApp1
                 Console.WriteLine("Add another student? y/n");
 
                 studentName.Add(students);
-                Student.Count++;//inciments the count by 1 from the student class
-                Console.WriteLine("Student Count: {0}", Student.Count);//displays the static count
+                Student.Count++;//inciments the count by 1 from the student class.
+                Console.WriteLine("Student Count: {0}", Student.Count);//displays the static count.
 
 
                 string sws = Console.ReadLine();
